@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./pesquisa.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Adivinhe o Número!</h1>
+        <p>Estou pensando em um número entre 1 e 100.🤔</p>
+        <input type="number" id="guess-input" placeholder="Digite seu palpite" />
+        <button id="guess-button" class="btn">Enviar Palpite</button>
+        <div id="result" class="result"></div>
+        <div id="attempts" class="attempts"></div>
+        <button id="restart-button" class="btn hidden">Reiniciar Jogo</button>
+        <div id="footer"></div>
+        <p id="footer-text"></p>
+        <div id="social-media">
+            <a href="https://api.whatsapp.com/send?phone=91992063722" target="_blank">
+                <img src="./whatsapp.png" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/bento.65" target="_blank">
+                <img src="./instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com/jb.bento.5/" target="_blank">
+                <img src="./facebook.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+        
+        <audio id="background-audio">
+            <source src="./1.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        <button id="play-audio-button" class="btn">Iniciar Música</button>
+    </div>
+       <script src="script.js"></script>
+</body>
+</html>
